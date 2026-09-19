@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+.DS_Store
+
+# Cloudflare Workers & Build artifacts
+.wrangler/
+dist/
+python_modules/
+
+# Node / Frontend (if applicable)
+node_modules/
+
+# Environment and Logs
+.env
+*.log
+.ruff_cache/
+.venv-workers/

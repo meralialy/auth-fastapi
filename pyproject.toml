@@ -1,0 +1,28 @@
+[project]
+name = "auth-fastapi"
+version = "0.0.0"
+description = "Stateless FastAPI authentication service on Cloudflare Workers"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "pyjwt",
+    "email-validator",
+]
+
+[dependency-groups]
+dev = [
+    "uvicorn",
+    "workers-runtime-sdk",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "BLE"]
+ignore = ["B008", "BLE001", "B904"]
+
+[tool.ruff.format]
+quote-style = "double"
